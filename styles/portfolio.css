@@ -1,16 +1,17 @@
 :root {
-  --branding-color: #04599b;
-  --secondary-color: #c5eceea6;
+  --branding-color: rgba(136, 107, 123);
+  --secondary-color: rgba(228, 214, 221, 0.3);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 body {
   font-family: var(--default-font-family);
-  background: rgb(255, 255, 255);
+  background: rgba(228, 214, 221, 0.2);
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 200px;
+  border: 10px solid var(--secondary-color);
 }
 nav {
   padding: 20px 20px;
@@ -69,7 +70,12 @@ h3 a:hover {
 }
 .work-img {
   margin-top: 70px;
-  border: 100px solid var(--secondary-color);
+  border: 20px solid var(--secondary-color);
+  border-radius: 10px;
+}
+.weather-img {
+  margin-top: 130px;
+  border: 20px solid var(--secondary-color);
   border-radius: 10px;
 }
 
@@ -132,12 +138,18 @@ h3 a:hover {
   padding: 15px 30px;
 }
 .project-description {
+  margin-top: 100px;
   padding: 120px 60px;
 }
 .shecodes-link {
   color: var(--branding-color);
   text-decoration: none;
   font-weight: bold;
+}
+.regina-img {
+  margin-top: 100px;
+  border: 50px solid var(--secondary-color);
+  border-radius: 10px;
 }
 @media (max-width: 960px) {
   h1 {
@@ -184,4 +196,14 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+footer .git-link {
+  color: var(--branding-color);
+}
+.contact-links {
+  color: var(--branding-color);
+}
+.note {
+  color: var(--branding-color);
+  opacity: 0.8;
 }
